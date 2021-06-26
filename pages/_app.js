@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 function MyApp({ Component, pageProps }) {
   return (    
-    <>
+    <div>
       <nav className={styles.navbar}>
-        <uL className={styles.navbarContactBox}>
+        <ul className={styles.navbarContactBox}>
           <Link href="/">
             <a>
               <div className={styles.brandPizza}>
-                <img src="#" alt="brand" />
+                <img src="/assests/images/pizza.svg" alt="brand" />
                 <p>Pizza Shop</p>
               </div>
             </a>
@@ -22,19 +22,19 @@ function MyApp({ Component, pageProps }) {
               </li>
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/about">
             <a>
               <li className={styles.navbarContact}>
                 About
               </li>
             </a>
           </Link>
-        </uL>
+        </ul>
       </nav>
       <div className={styles.container}>
         <Component {...pageProps} />
       </div>
-    </>
+    </div>
     )
 }
 
