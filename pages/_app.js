@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
               </li>
             </a>
           </Link>
-          <Link href="/about">
+          <Link href="/aboutPage">
             <a>
               <li className={styles.navbarContact}>
                 About

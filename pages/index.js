@@ -1,11 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Layout from '../components/Layout/Layout';
+import Home from '../components/Home/Home'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className={styles.container}>
-     <h1>Next JS APP </h1>       
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   )
 }
