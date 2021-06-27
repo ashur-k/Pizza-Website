@@ -47,8 +47,9 @@ export default function Pizza({pizza, otherPizzas}) {
         </div>
     </div>
     <footer className={styles.footer}>
-      <a rel="follow" target="_blank" href="https://www.shanekeenan.dev">
-      Practicing NEXT-JS Django CODING. Toutorial made by Cocoa.</a>
+      <a>
+      Practicing NEXT-JS Django CODING. Toutorial made by Cocoa.
+      </a>
     </footer>
   </div>
   )
