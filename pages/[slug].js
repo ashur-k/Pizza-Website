@@ -18,8 +18,7 @@ export default function Pizza({pizza, otherPizzas}) {
           <div className={styles.pizzaInfo}>
               <p className={styles.pizzaTitle}>{pizza.name}</p>
               <p className={styles.pizzaDescription}>
-                  For the absoloute mad lad who loves a morning
-                  breakfast on pizza.
+                  {pizza.description}
               </p>
               <p className={styles.pizzaPrice}>€{pizza.price}</p>
               <p className={styles.pizzaToppings}>
