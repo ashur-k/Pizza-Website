@@ -66,7 +66,7 @@
 
 .pizzaText {
   text-align: center;
-  background-color: #df2c06;
+  background-color: #07bff7;
 }
 
 .pizzaHeader {
@@ -82,9 +82,9 @@
 
 .pizzaPrice {
   font-style: italic;
-  color: #f0f0f0;
-  font-size: 16px;
-  font-weight: 300;
+  color: #7b0000;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 @media only screen and (max-width: 600px) {
