@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Home() {
   const pizzas = [
@@ -53,17 +54,37 @@ export default function Home() {
       price: 9.99,
     },
   ]
+
+  const [keyword, setKeyword] = useState('');
+
+  const onInputChange = (e) => {
+    e.preventDefault();
+    setKeyword(e.target.value.toLowerCase());
+  }
+
+  const filteredPizzas = pizzas.filter(
+    pizza =>
+    pizza.name.toLowerCase().includes(keyword) || pizza.toppings.includes(keyword)
+  )
+
   return (
     <div>
       <div className={styles.searchWrapper}>
         <input 
           placeholder="Search for pizza toppings..." 
           className={styles.searchBar} 
+          onChange={onInputChange}
         />
       </div>
       <div className={styles.pizzaContainer}>
-        {
-          pizzas.map((pizza) => {
+        {filteredPizzas < 1 ? 
+        (
+          <div className={styles.noContainer}>
+            <h5>There is no pizza or topping with that search.</h5>
+          </div>
+        ):
+        (
+          filteredPizzas.map(pizza => {
             return (
               <div className={styles.pizzaItem} key={pizza.id}>
                 <Link href={`/${pizza.slug}`}>
@@ -84,7 +105,8 @@ export default function Home() {
                 </div>
               </div>
             )
-          })}
+          })
+        )}
       </div>
     </div>
   )
