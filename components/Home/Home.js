@@ -12,6 +12,7 @@ export default function Home() {
       toppings: ['mozzrella Chees'],
       image:'https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
     {
       id: '2',
@@ -20,6 +21,7 @@ export default function Home() {
       toppings: ['Ham', 'Bacon', 'Pepporoni', 'Sussage'],
       image:'https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
     {
       id: '3',
@@ -28,6 +30,7 @@ export default function Home() {
       toppings: ['mozzrella Chees'],
       image:'https://images.unsplash.com/photo-1564128442383-9201fcc740eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1102&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
     {
       id: '4',
@@ -36,6 +39,7 @@ export default function Home() {
       toppings: ['mozzrella Chees'],
       image:'https://images.unsplash.com/photo-1474600056930-615c3d706456?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
     {
       id: '5',
@@ -44,6 +48,7 @@ export default function Home() {
       toppings: ['mozzrella Chees'],
       image:'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
     {
       id: '6',
@@ -52,6 +57,7 @@ export default function Home() {
       toppings: ['mozzrella Chees'],
       image:'https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1055&q=80',
       price: 9.99,
+      description: "really nice pizza"
     },
   ]
 

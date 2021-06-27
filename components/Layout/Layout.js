@@ -15,8 +15,9 @@ export default function Layout({children}) {
       </main>
 
       <footer className={styles.footer}>
-        Practicing NEXT-JS CODING
-      </footer>
+      <a rel="follow" target="_blank" href="https://www.shanekeenan.dev">
+      Practicing NEXT-JS Django CODING. Toutorial made by Cocoa.</a>
+    </footer>
     </div>
   )
 }
