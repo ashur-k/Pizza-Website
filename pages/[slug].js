@@ -57,7 +57,7 @@ export default function Pizza({pizza, otherPizzas}) {
 
 export const getStaticPaths = async () => {
   
-  const res = await fetch('http://127.0.0.1:8000/api/pizzas/');
+  const res = await fetch('https://ash-pizza-website.herokuapp.com/api/pizzas/');
   const pizzas = await res.json();
 
   console.log(pizzas)
@@ -74,7 +74,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({params}) => {
 
-  const res = await fetch('http://127.0.0.1:8000/api/pizzas/');
+  const res = await fetch('https://ash-pizza-website.herokuapp.com/api/pizzas/');
   const pizzas = await res.json();
 
   const pizza = pizzas.filter(pizza => pizza.slug.includes(params.slug));

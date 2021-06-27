@@ -9,8 +9,9 @@
   align-items: center;
   background-color: #07bff7;
   height: 3rem;
-  font-weight: 500;
-  color: #f0f0f0;
+  font-weight: 700;
+  color: #141414;
+  font-size: 20px;
 }
 
 .navbarContact {
