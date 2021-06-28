@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 export default function Pizza({pizza, otherPizzas}) {
+  console.log(pizza)
   return (
     <div className={styles.container}>
         <Head>
@@ -20,7 +21,7 @@ export default function Pizza({pizza, otherPizzas}) {
               <p className={styles.pizzaDescription}>
                   {pizza.description}
               </p>
-              <p className={styles.pizzaPrice}>€{pizza.price}</p>
+              <p className={styles.pizzaPrice}>£{pizza.price}</p>
               <p className={styles.pizzaToppings}>
                 {
                   pizza.toppings.map(topping => topping).join(', ')
