@@ -84,7 +84,8 @@ export const getStaticProps = async ({params}) => {
     props: {
       pizza: pizza[0],
       otherPizzas: otherPizzas.sort(() => Math.random() - Math.random()).slice(0, 3),
-    }
+    },
+    revalidate:5 
   }
 
 
