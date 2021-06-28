@@ -19,7 +19,8 @@ export const getStaticProps = async ({params}) => {
   return {
     props: {
       pizzas,
-    }
+    },
+    revalidate:5 
   }
 
 
